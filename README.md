@@ -15,11 +15,15 @@
 python3 speed_test.py <URL>
 ```
 
-Пример (тестовый файл 100 МБ от Hetzner):
+Пример (тестовый файл 50 МБ от Cloudflare — размер задаётся параметром `bytes`):
 
 ```bash
-python3 speed_test.py https://ash-speed.hetzner.com/100MB.bin
+python3 speed_test.py "https://speed.cloudflare.com/__down?bytes=50000000"
 ```
+
+> Если пример не открывается (провайдерская блокировка, гео-ограничение) — возьмите
+> любой другой прямой URL на файл 25–100 МБ: зеркала дистрибутивов Linux, тестовые
+> файлы хостеров (например `https://ash-speed.hetzner.com/100MB.bin`).
 
 Пример вывода:
 
